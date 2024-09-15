@@ -21,12 +21,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">  The Witcher es un videojuego de rol desarrollado por CD Projekt Red y lanzado en 2007. Basado en la serie de novelas del mismo nombre escrita por Andrzej Sapkowski, el juego sigue al cazador de monstruos Geralt de Rivia en un mundo de fantasía oscuro y lleno de conflictos. Geralt, conocido como el "Lobo Blanco", se enfrenta a criaturas sobrenaturales y toma decisiones morales complejas mientras busca encontrar a su amada y desentrañar una trama que amenaza con desatar el caos. El juego es aclamado por su profunda narrativa, su detallado mundo abierto y su sistema de combate estratégico, y ha sido el inicio de una exitosa serie de videojuegos y adaptaciones en otros medios  </p>
                         <p class="h4">$19.909</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

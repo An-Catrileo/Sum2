@@ -25,8 +25,8 @@
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">Kirby es una serie de videojuegos desarrollada por HAL Laboratory y publicada por Nintendo, debutando en 1992 con Kirby’s Dream Land para la Game Boy. El personaje principal, Kirby, es un pequeño y rosa héroe con la habilidad única de inhalar enemigos y copiar sus habilidades. Los juegos de Kirby son conocidos por su estilo de juego accesible y su mundo colorido y encantador. La serie combina plataformas en 2D con una variedad de mecánicas innovadoras, como la capacidad de Kirby para transformarse en diferentes formas y adquirir poderes especiales. A lo largo de los años, Kirby ha protagonizado numerosos juegos en distintas plataformas de Nintendo, ganándose un lugar especial en el corazón de los fans por su diseño adorable y su jugabilidad divertida y variada.</p>
                         <p class="h4">$39.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

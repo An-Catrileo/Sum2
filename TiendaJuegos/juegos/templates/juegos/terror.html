@@ -14,12 +14,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -29,7 +29,7 @@
         <p>Sumérgete en el horror y vive una experiencia escalofriante con nuestros juegos de terror. Enfrenta tus peores pesadillas y descubre los secretos más oscuros en juegos como Evil Within 2 y Resident Evil 4, donde el miedo está a la vuelta de cada esquina.</p>
         <div class="row container-full justify-content-center">
             <div class="col-sm-3 col-12">
-                <a href="the_evil_within_2.html" class="game-card-link">
+                <a href="{% url 'the_evil_within_2.html' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/theevilwhitin.jpg" alt="The Evil Within 2">
                         <h3>The Evil Within 2</h3>
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="resident_evil.html" class="game-card-link">
+                <a href="{% url 'resident_evil' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/residentevil.jpg" alt="Resident Evil 4">
                         <h3>Resident Evil 4</h3>
@@ -47,7 +47,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="the_witcher.html" class="game-card-link">
+                <a href="{% url 'the_witcher' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/thewitcher.jpg" alt="The Witcher">
                         <h3>The Witcher</h3>

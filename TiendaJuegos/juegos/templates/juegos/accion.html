@@ -14,12 +14,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -29,7 +29,7 @@
         <p>Siente la adrenalina y la emoción del combate en nuestros juegos de acción. Desde el caos urbano de Grand Theft Auto V hasta las encantadoras aventuras de Kirby, estos juegos te ofrecen acción sin límites y entretenimiento garantizado.</p>
         <div class="row container-full justify-content-center">
             <div class="col-sm-3 col-12">
-                <a href="gta.html" class="game-card-link">
+                <a href="{% url 'gta' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/gta.jpg' %}" alt="Grand Theft Auto V">
                         <h3>Grand Theft Auto V</h3>
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="kirby.html" class="game-card-link">
+                <a href="{% url 'kirby' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/kirby.jpg' %}" alt="Kirby">
                         <h3>Kirby</h3>

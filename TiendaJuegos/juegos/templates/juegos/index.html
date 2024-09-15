@@ -36,12 +36,12 @@
         <aside class="sidebar col-2">
             <a href="#categorias" class="sidebar-link">Categorías</a>
             <ul class="lista">
-                <li><a href="supervivencia.html">Supervivencia</a></li>
-                <li><a href="terror.html">Terror</a></li>
-                <li><a href="suspenso.html">Suspenso</a></li>
-                <li><a href="accion.html">Acción</a></li>
-                <li><a href="mundo_abierto.html">Mundo Abierto</a></li>
-                <li><a href="todosLosJuegos.html" class="all-categories">Todos los Juegos</a></li>
+                <li><a href="{% url 'supervivencia' %}">Supervivencia</a></li>
+                <li><a href="{% url 'terror' %}">Terror</a></li>
+                <li><a href="{% url 'suspenso' %}">Suspenso</a></li>
+                <li><a href="{% url 'accion' %}">Acción</a></li>
+                <li><a href="{% url 'mundo_abierto' %}">Mundo Abierto</a></li>
+                <li><a href="{% url 'todosLosJuegos' %}" class="all-categories">Todos los Juegos</a></li>
             </ul>
         </aside>
         <section class="main-content col-10 mr-5">
@@ -51,7 +51,7 @@
             </div>
 
             <div class="game-grid">
-                <a href="the_evil_within_2.html" class="game-card-link">
+                <a href="{% url 'the_evil_within' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/theevilwhitin.jpg' %}" alt="Evil Within 2">
                         <h3>Evil Within 2</h3>
@@ -65,70 +65,70 @@
                         <p>49.999 CLP</p>
                     </div>
                 </a>
-                <a href="minecraft.html" class="game-card-link">
+                <a href="{% url 'minecraft' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/minecraft.jpg' %}" alt="Minecraft">
                         <h3>Minecraft</h3>
                         <p>39.990 CLP</p>
                     </div>
                 </a>
-                <a href="gta.html" class="game-card-link">
+                <a href="{% url 'gta' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/gta.jpg' %}" alt="Grand Theft Auto V">
                         <h3>Grand Theft Auto V</h3>
                         <p>69.990 CLP</p>
                     </div>
                 </a>
-                <a href="kirby.html" class="game-card-link">
+                <a href="{% url 'kirby' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/kirby.jpg' %}" alt="Kirby">
                         <h3>Kirby</h3>
                         <p>69.990 CLP</p>
                     </div>
                 </a>
-                <a href="theforest.html" class="game-card-link">
+                <a href="{% url 'theforest' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/theforest.jpg' %}" alt="The forest">
                         <h3>The forest</h3>
                         <p>69.990 CLP</p>
                     </div>
                 </a>
-                <a href="gta.html" class="game-card-link">
+                <a href="{% url 'subnautica' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/subnautica.jpg' %}" alt="Subnautica">
                         <h3>Subnautica</h3>
                         <p>69.990 CLP</p>
                     </div>
                 </a>
-                <a href="supermario.html" class="game-card-link">
+                <a href="{% url 'supermario' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/supermario.jpg' %}" alt="Supermario">
                         <h3>Supermario</h3>
                         <p>69.990 CLP</p>
                     </div>
                 </a>
-                <a href="gary_mod.html" class="game-card-link">
+                <a href="{% url 'gary_mod' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/garymod.jpg' %}" alt="Gary's Mod">
                         <h3>Gary's Mod</h3>
                         <p>29.990 CLP</p>
                     </div>
                 </a>
-                <a href="zelda.html" class="game-card-link">
+                <a href="{% url 'zelda' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/zelda.jpg' %}" alt="The Legend of Zelda: Breath of the Wild">
                         <h3>The Legend of Zelda: Breath of the Wild</h3>
                         <p>19.909 CLP</p>
                     </div>
                 </a>
-                <a href="the_witcher.html" class="game-card-link">
+                <a href="{% url 'the_witcher' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/thewitcher.jpg' %}" alt="The Witcher">
                         <h3>The Witcher</h3>
                         <p>19.909 CLP</p>
                     </div>
                 </a>
-                <a href="tom_raider.html" class="game-card-link">
+                <a href="{% url 'tom_raider' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="{% static '/Imagenes/tomraider.jpg' %}" alt="Tom Raider">
                         <h3>Tomb Raider</h3>

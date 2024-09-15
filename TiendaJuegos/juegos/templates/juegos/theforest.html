@@ -21,12 +21,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -35,13 +35,13 @@
                 <div class="game-description row">
                     <div class="col-12 col-sm-4">
                         <h1 class="mb-3">The Forest</h1>
-                        <img src="/Imagenes/theforest.jpg" alt="The Forest" class="img-fluid mb-3">
+                        <img src="{% static '/Imagenes/theforest.jpg' %}" alt="The Forest" class="img-fluid mb-3">
                     </div>
                     <div class="col-12 col-sm-8">
                         <p class="description-text">The Forest es un juego de supervivencia y horror en primera persona desarrollado por Endnight Games y lanzado en 2014. El juego se desarrolla en un bosque oscuro y misterioso después de un accidente aéreo, donde el jugador debe sobrevivir en un entorno hostil lleno de criaturas caníbales y sobrenaturales. Los jugadores deben recolectar recursos, construir refugios y herramientas, y defenderse de los ataques de enemigos mientras exploran el bosque en busca de respuestas sobre el destino de su hijo secuestrado. The Forest combina elementos de supervivencia, exploración y construcción, ofreciendo una experiencia inmersiva y desafiante en un mundo abierto que se genera procedimentalmente. El juego ha sido elogiado por su atmósfera tensa, su jugabilidad adictiva y su enfoque en el horror de supervivencia</p>
                         <p class="h4">$39.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

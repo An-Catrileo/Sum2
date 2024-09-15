@@ -21,12 +21,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">Minecraft es un videojuego de sandbox que permite a los jugadores explorar un mundo generado aleatoriamente compuesto de bloques en 3D. Desarrollado por Mojang Studios, el juego ofrece dos modos principales: el modo de supervivencia, donde los jugadores deben recolectar recursos, construir estructuras y defenderse de criaturas hostiles, y el modo creativo, que permite una construcción libre y sin limitaciones de recursos. Desde su lanzamiento en 2011, Minecraft se ha convertido en un fenómeno cultural, conocido por su estilo visual pixelado y su vasta libertad creativa. Los jugadores pueden construir desde simples casas hasta complejas ciudades y experimentar con una variedad de mods y comunidades de usuarios que amplían el juego aún más.</p>
                         <p class="h4">$39.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

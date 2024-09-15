@@ -14,12 +14,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             destino.</p>
         <div class="row container-full justify-content-center">
             <div class="col-sm-3 col-12">
-                <a href="theforest.html" class="game-card-link">
+                <a href="{% url 'theforest' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/theforest.jpg" alt="The Forest">
                         <h3>The Forest</h3>
@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="subnautica.html" class="game-card-link">
+                <a href="{% url 'subnautica' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/subnautica.jpg" alt="Subnautica">
                         <h3>Subnautica</h3>
@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="gary_mod.html" class="game-card-link">
+                <a href="{% url 'gary_mod' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/gary'smod.jpg" alt="Gary's Mod">
                         <h3>Gary's Mod</h3>

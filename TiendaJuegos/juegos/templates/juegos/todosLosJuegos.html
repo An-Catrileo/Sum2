@@ -16,12 +16,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -37,68 +37,68 @@
                 <img src="{% static '/Imagenes/theevilwithin.jpg' %}" alt="The Evil Within 2">
                 <h2>The Evil Within 2</h2>
                 <p class="price">$19.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'the_evil_within_2' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/garymod.jpg' %}" alt="Gary's Mod">
                 <h2>Gary's Mod</h2>
                 <p class="price">$29.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'gary_mod' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/gta.jpg' %}" alt="GTA V">
                 <h2>GTA V</h2>
                 <p class="price">$39.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'gta' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/minecraft.jpg' %}" alt="Minecraft">
                 <h2>Minecraft</h2>
                 <p class="price">$39.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'minecraft' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/residentevil.jpg' %}" alt="Resident Evil 4">
                 <h2>Resident Evil 4</h2>
                 <p class="price">$39.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'resident_evil' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/subnautica.jpg' %}" alt="Subnautica">
                 <h2>Subnautica</h2>
                 <p class="price">$39.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'subnautica' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/supermario.jpg' %}" alt="Mario Odyssey">
                 <h2>Mario Odyssey</h2>
                 <p class="price">$39.999</p>
-                <a href="index.html" class="nav-link">Comprar</a>
+                <a href="{% url 'supermario' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/theforest.jpg' %}" alt="The Forest">
                 <h2>The Forest</h2>
-                <p class="price">$39.995</p><a href="index.html" class="nav-link">Comprar</a>
+                <p class="price">$39.995</p><a href="{% url 'theforest' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/thewitcher.jpg' %}" alt="The Witcher">
                 <h2>The Witcher</h2>
-                <p class="price">$39.996</p><a href="index.html" class="nav-link">Comprar</a>
+                <p class="price">$39.996</p><a href="{% url 'the_witcher' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/tomraider.jpg' %}" alt="Tomb Raider">
                 <h2>Tomb Raider</h2>
-                <p class="price">$39.992</p><a href="index.html" class="nav-link">Comprar</a>
+                <p class="price">$39.992</p><a href="{% url 'tom_raider' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/zelda.jpg' %}" alt="Zelda: Breath of the Wild">
                 <h2>Zelda: Breath of the Wild</h2>
-                <p class="price">$39.991</p><a href="index.html" class="nav-link">Comprar</a>
+                <p class="price">$39.991</p><a href="{% url 'index' %}" class="nav-link">Comprar</a>
             </div>
             <div class="game-card game-card-all-games">
                 <img src="{% static '/Imagenes/kirby.jpg' %}" alt="Kirby">
                 <h2>Kirby</h2>
-                <p class="price">$39.991</p><a href="index.html" class="nav-link">Comprar</a>
+                <p class="price">$39.991</p><a href="{% url 'kirby' %}" class="nav-link">Comprar</a>
             </div>
         </div>
     </main>

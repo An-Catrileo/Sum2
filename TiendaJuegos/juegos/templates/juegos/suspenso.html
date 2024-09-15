@@ -14,12 +14,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -32,7 +32,7 @@
             destino.</p>
         <div class="row container-full justify-content-center">
             <div class="col-sm-3 col-12">
-                <a href="the_witcher.html" class="game-card-link">
+                <a href="{% url 'the_witcher' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/thewitcher.jpg" alt="The Witcher">
                         <h3>The Witcher</h3>
@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="tomb_raider.html" class="game-card-link">
+                <a href="{% url 'tom_raider' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/tomraider.jpg" alt="Tomb Raider">
                         <h3>Tomb Raider</h3>

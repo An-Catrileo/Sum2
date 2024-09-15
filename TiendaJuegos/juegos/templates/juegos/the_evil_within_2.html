@@ -22,12 +22,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -36,7 +36,7 @@
         <div class="game-description row">
             <div class="col-12 col-sm-4">
                 <h1 class="mb-3">The Evil Within</h1>
-                <img src="/Imagenes/theevilwhitin.jpg" alt="Evil Within" class="img-fluid mb-3">
+                <img src="{% static '/Imagenes/theevilwhitin.jpg' %}" alt="Evil Within" class="img-fluid mb-3">
             </div>
             <div class="col-12 col-sm-8">
                 <p class="description-text">The Evil Within: es un juego de terror y supervivencia desarrollado
@@ -49,7 +49,7 @@
                     de sus asientos.</p>
                 <p class="h4">$59.990</p>
                 <div class="text-center">
-                    <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                    <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                 </div>
             </div>
         </div>

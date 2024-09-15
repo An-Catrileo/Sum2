@@ -14,12 +14,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -29,7 +29,7 @@
         <p>Explora vastos y detallados mundos llenos de posibilidades en nuestros juegos de mundo abierto. Ya sea construyendo y explorando en Minecraft o embarcándote en una aventura épica en The Legend of Zelda: Breath of the Wild, la libertad y la aventura te esperan en cada esquina.</p>
         <div class="row container-full justify-content-center">
             <div class="col-sm-3 col-12">
-                <a href="minecraft.html" class="game-card-link">
+                <a href="{% url 'minecraft' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/minecraft.jpg" alt="Minecraft">
                         <h3>Minecraft</h3>
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="col-sm-3 col-12">
-                <a href="zelda.html" class="game-card-link">
+                <a href="{% url 'zelda' %}" class="game-card-link">
                     <div class="game-card">
                         <img src="/Imagenes/zelda.jpg" alt="The Legend of Zelda: Breath of the Wild">
                         <h3>The Legend of Zelda: Breath of the Wild</h3>

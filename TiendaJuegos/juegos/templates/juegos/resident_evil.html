@@ -25,8 +25,8 @@
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">Resident Evil 4:  es una entrega revolucionaria en la serie de videojuegos de terror y supervivencia desarrollada por Capcom. Lanzado inicialmente en 2005, el juego sigue al agente Leon S. Kennedy mientras busca a la hija del presidente de los Estados Unidos, Ashley Graham, que ha sido secuestrada por un culto en una aldea rural de Europa. A medida que Leon explora, se enfrenta a una amenaza de infectados y seres terroríficos, mientras desentraña un complot oscuro detrás del secuestro. Con una jugabilidad innovadora, una narrativa envolvente y un sistema de combate refinado, Resident Evil 4 es considerado uno de los mejores juegos de la serie y ha dejado una marca duradera en el género.</p>
                         <p class="h4">$59.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

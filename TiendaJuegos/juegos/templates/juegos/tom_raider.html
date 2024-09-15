@@ -21,12 +21,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">Tomb Raider: es una franquicia de videojuegos de acción y aventuras protagonizada por la intrépida arqueóloga Lara Croft. El juego sigue a Lara en su búsqueda de artefactos antiguos y misteriosos mientras explora tumbas, ruinas y entornos exóticos. Desde su debut en 1996, Tomb Raider ha evolucionado, ofreciendo una mezcla de resolución de acertijos, exploración, y combate. La serie es conocida por sus escenarios detallados, sus complejas historias y la habilidad de Lara para superar obstáculos y enfrentarse a enemigos en su búsqueda de tesoros y secretos. La saga ha sido aclamada por su innovador diseño de niveles y el desarrollo del personaje de Lara Croft.</p>
                         <p class="h4">$39.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,6 @@ urlpatterns= [
     path('the_witcher/', views.the_witcher, name='the_witcher'),
     path('theforest/', views.theforest, name='theforest'),
     path('todosLosJuegos/', views.todosLosJuegos, name='todosLosJuegos'),
-    path('tom_raider/', views.tom_raider, name='tomb_raider'),
+    path('tom_raider/', views.tom_raider, name='tom_raider'),
     path('zelda/', views.zelda, name='zelda'),
 ]

@@ -21,12 +21,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">Super Mario Odyssey es un aclamado videojuego de plataformas desarrollado por Nintendo para la consola Nintendo Switch, lanzado en octubre de 2017. En esta entrega, Mario emprende una aventura global con el objetivo de rescatar a la Princesa Peach de las garras del malvado Bowser, quien planea casarse con ella. El juego presenta un mundo abierto y expansivo con niveles diversos ambientados en diferentes reinos inspirados en lugares reales y fantásticos. Mario se une a un nuevo aliado, Cappy, un sombrero con vida que le permite capturar y controlar objetos y enemigos, añadiendo una capa de estrategia y creatividad a la jugabilidad. Super Mario Odyssey es elogiado por su diseño innovador, su estilo artístico vibrante y su capacidad para ofrecer una experiencia divertida y emocionante tanto para nuevos jugadores como para veteranos de la serie.</p>
                         <p class="h4">$59.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>

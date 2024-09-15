@@ -25,8 +25,8 @@
                 <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
             </a>
             <div class="container-full flex-end">
-                <a href="login.html" class="nav-link">Iniciar Sesión</a>
-                <a href="registro.html" class="nav-link registrate">Registrate</a>
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
             </div>
         </nav>
     </header>
@@ -41,7 +41,7 @@
                         <p class="description-text">Grand Theft Auto V es un videojuego de acción y aventura desarrollado por Rockstar North y publicado por Rockstar Games. Lanzado en 2013, el juego se ambienta en la ficticia ciudad de Los Santos, inspirada en Los Ángeles, y sigue las historias entrelazadas de tres personajes jugables: Michael De Santa, un ex delincuente; Franklin Clinton, un joven que busca un cambio de vida; y Trevor Philips, un sociópata con un pasado violento. GTA V es conocido por su extenso mundo abierto, su detallada narrativa y su jugabilidad variada que incluye robos, persecuciones y misiones secundarias. Además de su campaña principal, el juego ofrece un robusto modo multijugador en línea, GTA Online, que permite a los jugadores participar en diversas actividades y enfrentarse en misiones cooperativas o competitivas.</p>
                         <p class="h4">$39.990</p>
                         <div class="text-center">
-                            <a href="index.html" class="btn btn-outline-primary">Comprar</a>
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
