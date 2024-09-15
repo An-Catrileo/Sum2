@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspenso - Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
+            </a>
+            <div class="container-full flex-end">
+                <a href="login.html" class="nav-link">Iniciar Sesión</a>
+                <a href="registro.html" class="nav-link registrate">Registrate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="row p-5">
+        <h1>Suspenso</h1>
+        <p>Vive al filo de la tensión y la emoción con nuestros juegos de suspenso.
+            En títulos como The Witcher y Tomb Raider,
+            serás parte de aventuras épicas llenas de misterios, peligros ocultos, y decisiones que definirán tu
+            destino.</p>
+        <div class="row container-full justify-content-center">
+            <div class="col-sm-3 col-12">
+                <a href="theforest.html" class="game-card-link">
+                    <div class="game-card">
+                        <img src="/Imagenes/theforest.jpg" alt="The Forest">
+                        <h3>The Forest</h3>
+                        <p>69.990 CLP</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 col-12">
+                <a href="subnautica.html" class="game-card-link">
+                    <div class="game-card">
+                        <img src="/Imagenes/subnautica.jpg" alt="Subnautica">
+                        <h3>Subnautica</h3>
+                        <p>69.990 CLP</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3 col-12">
+                <a href="gary_mod.html" class="game-card-link">
+                    <div class="game-card">
+                        <img src="/Imagenes/gary'smod.jpg" alt="Gary's Mod">
+                        <h3>Gary's Mod</h3>
+                        <p>29.990 CLP</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Videojuegos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
