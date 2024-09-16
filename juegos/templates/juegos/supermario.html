@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descripción detallada de Resident Evil, un emocionante juego de terror.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Super Mario Odyssey - Tienda de Videojuegos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{% url 'index' %}" class="logo">
+                <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
+            </a>
+            <div class="container-full flex-end">
+                <a href="{% url 'login' %}" class="nav-link">Iniciar Sesión</a>
+                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-full">
+                <div class="game-description row">
+                    <div class="col-12 col-sm-4">
+                        <h1 class="mb-3">Super Mario Odyssey</h1>
+                        <img src="{% static '/Imagenes/supermario.jpg' %}" alt="Super Mario Odyssey" class="img-fluid mb-3">
+                    </div>
+                    <div class="col-12 col-sm-8">
+                        <p class="description-text">Super Mario Odyssey es un aclamado videojuego de plataformas desarrollado por Nintendo para la consola Nintendo Switch, lanzado en octubre de 2017. En esta entrega, Mario emprende una aventura global con el objetivo de rescatar a la Princesa Peach de las garras del malvado Bowser, quien planea casarse con ella. El juego presenta un mundo abierto y expansivo con niveles diversos ambientados en diferentes reinos inspirados en lugares reales y fantásticos. Mario se une a un nuevo aliado, Cappy, un sombrero con vida que le permite capturar y controlar objetos y enemigos, añadiendo una capa de estrategia y creatividad a la jugabilidad. Super Mario Odyssey es elogiado por su diseño innovador, su estilo artístico vibrante y su capacidad para ofrecer una experiencia divertida y emocionante tanto para nuevos jugadores como para veteranos de la serie.</p>
+                        <p class="h4">$59.990</p>
+                        <div class="text-center">
+                            <a href="{% url 'index' %}" class="btn btn-outline-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Videojuegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
