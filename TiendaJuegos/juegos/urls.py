@@ -9,6 +9,7 @@ urlpatterns= [
     path('gta/', views.gta, name='gta'),
     path('kirby/', views.kirby, name='kirby'),
     path('login/', views.login, name='login'),
+    path('protegida/', views.vista_protegida, name='protegida'),
     path('minecraft/', views.minecraft, name='minecraft'),
     path('mundo_abierto/', views.mundo_abierto, name='mundo_abierto'),
     path('resident_evil/', views.resident_evil, name='resident_evil'),
