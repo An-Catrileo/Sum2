@@ -5,8 +5,12 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Producto
 from .forms import ProductoForm
+from django.http import HttpResponse
 
 # Create your views here.
+def home(request):
+    return redirect('Bienvenido a la aplicacion Juegos')
+
 
 def index(request):
     return render(request, 'juegos/index.html')
