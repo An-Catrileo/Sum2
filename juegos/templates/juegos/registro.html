@@ -1,111 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Descubre los mejores videojuegos en nuestra tienda. Encuentra ofertas y novedades en una amplia variedad de juegos.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <title>Tienda de Videojuegos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static '/css/style.css' %}">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="{% url 'index' %}" class="logo">
-                <img src="{% static '/Imagenes/logo.png' %}" alt="Logo de la tienda">
-            </a>
-            <div class="container-full flex-end">
-                <a href="{% url 'registro' %}" class="nav-link registrate">Registrate</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container container-registro">
-            <div class="row justify-content-center">
-                <div class="col-8">
-                    <h1 class="registro-title">Registro</h1>
-                    <form id="formulario_registro" method="POST" action="{% url 'registro' %}">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="name" class="form-label">Nombre Completo</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre Completo" required>
-                                <div class="invalid-feedback">El nombre es OBLIGATORIO</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label">Fecha de Nacimiento</label>
-                                <input type="date" class="form-control" id="birthdate" required>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label">Nombre de usuario</label>
-                                <input type="text" class="form-control" id="username" placeholder="Ingresa Nombre de Usuario" required>
-                                <div class="invalid-feedback">El nombre de usuario es OBLIGATORIO</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="email" class="form-label">Correo Electronico</label>
-                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu Correo" required>
-                                <div class="invalid-feedback">El email es OBLIGATORIO</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" placeholder="Ingresa tu Contraseña" required>
-                                <div class="invalid-feedback">El contraseña es OBLIGATORIO</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label">Repite Contraseña</label>
-                                <input type="password" class="form-control" id="repassword" placeholder="Repite Contraseña" required>
-                                <div class="invalid-feedback">El repetir contraseña es OBLIGATORIO</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label">Dirección</label>
-                                <input type="text" class="form-control" id="street" placeholder="Calle">
-                                <div class="invalid-feedback">ingrese solo el nombre de la calle</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label"></label>
-                                <input type="text" class="form-control" id="number" placeholder="Numero">
-                                <div class="invalid-feedback">Ingrese solo el numero del domicilio</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <label for="" class="form-label"></label>
-                                <input type="text" class="form-control" id="comuna" placeholder="Comuna">
-                                <div class="invalid-feedback">ingrese solo el nombre de la comuna</div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 form-group mb-2">
-                                <input type="text" class="form-control" id="depto" placeholder="Departamento (opcional)">
-                                <div class="invalid-feedback">Ingrese solo el numero del departamento</div>
-                            </div>
-                            <div class="d-flex justify-content-center mt-4">
-                                <button type="submit" class="nav-link">Registrarse</button>
-                                <button type="reset" class="nav-link ms-2">Limpiar</button>
-                            </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="successModalLabel">Exito</h5>
-                        <button type="button" class="nav-link" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Se ha registrado exitosamente
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="nav-link" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>© 2024 Tienda de Videojuegos. Todos los derechos reservados.</p>
-    </footer>
-    <script src="../js/registro.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+{% extends "juegos/base_generic.html" %}
+
+{% block title %}Registrar Usuario{% endblock %}
+
+{% block content %}
+<h2 class="my-4">Registrar Usuario</h2>
+<form method="post" class="mb-3">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Registrar</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

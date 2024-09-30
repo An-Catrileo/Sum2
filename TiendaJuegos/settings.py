@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'listar_productos' #despues de iniciar sesion redirigir a productos
+LOGOUT_REDIRECT_URL = 'home'  #Despues de cerrar sesion, redirigir a home
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'juegos',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -86,6 +91,16 @@ DATABASES = {
         'PORT':  '1521',
     }
 }
+
+# configuración del backend de correo
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'tu_correo@gmail.com'  # Reemplaza con tu correo
+EMAIL_HOST_PASSWORD = 'tu_contraseña'  # Reemplaza con tu contraseña
+DEFAULT_FROM_EMAIL ='juegos <tu_correo@gmail.com>' 
+
 
 
 # Password validation

@@ -321,3 +321,7 @@ form {
     background-size: 200% 200%;
     animation: iridescent 1.5s ease infinite;
 }
+
+.flex-direction-row {
+    flex-direction: row;
+}
