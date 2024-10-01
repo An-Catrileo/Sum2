@@ -1,0 +1,22 @@
+{% extends "juegos/base_generic.html" %}
+{% load static %}
+
+{% block content %}
+<main class="row p-5">
+    <h1>{{categoria.nombre}}</h1>
+    <div class="row container-full justify-content-center">
+        {% for juego in juegos %}
+            <div class="col-sm-3 col-12">
+                <a href="{% url 'detalle_juego' juego.pk %}" class="game-card-link">
+                    <div class="game-card">
+                        <img src="{{ juego.url_imagen }}" alt="The Forest">
+                        <h3>{{ juego.nombre }}</h3>
+                        <p>{{ juego.precio }} CLP</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+</main>
+{% endblock %}

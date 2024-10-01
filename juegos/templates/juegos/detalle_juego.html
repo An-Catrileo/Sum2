@@ -1,0 +1,20 @@
+{% extends "juegos/base_generic.html" %}
+{% load static %}
+
+{% block content %}
+<main class="container">
+    <div class="game-description row">
+        <div class="col-12 col-sm-4">
+            <h1 class="mb-3">{{juego.nombre}}</h1>
+            <img src="{{juego.url_imagen}}" alt={{juego.nombre}} class="img-fluid mb-3">
+        </div>
+        <div class="col-12 col-sm-8">
+            <p class="description-text">{{juego.descripcion}}</p>
+            <p class="h4">${{juego.precio}}</p>
+            <div class="text-center">
+                <a href="{% url 'agregar_al_carrito' juego.pk %}" class="btn btn-outline-primary">Agregar al Carrito</a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
